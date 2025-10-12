@@ -1,0 +1,178 @@
+@font-face {
+font-family: 'sketchlogs';
+src: url(Sketchlogs.ttf);
+}
+@font-face {
+    font-family: 'styles';
+    src: url(styles.ttf);
+    }
+    
+    
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Sketchlogs;
+background: #2A7B9B;
+color: #111;
+line-height: 1.5;
+padding: 1rem;
+}
+
+/* Window look */
+.window {
+border: 2px solid #000;
+background: #fff;
+padding: 1rem;
+margin-bottom: 1rem;
+box-shadow: 4px 4px 0 #000;
+min-height: 180px; /* sets a minimum height */
+
+
+
+
+}
+
+/* Header */
+.header {
+font-family: styles;
+background: #dbeafe;
+margin-bottom: 1.5rem;
+}
+
+.header h1 {
+margin-bottom: 1rem;
+}
+
+
+
+/* From Uiverse.io by Praashoo7 */ 
+.buttons {
+font-family: sketchlogs;
+outline: none;
+color: #000000;
+padding: 1em 3em;
+border: 2px dashed rgba(242, 153, 141, 1);
+border-radius: 15px;
+background-color: rgb(5, 149, 169);
+box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+transition: .1s ease-in-out, .4s color;
+
+/* Add spacing */
+margin: 0.5rem;
+}
+
+.avatar {
+  display: block;
+  margin: auto;
+  width: 32%;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: .8rem;
+  object-fit: cover;  /* make video fill the circle without distortion */
+
+}
+
+.drawing {
+  display: block;
+  margin: 0 auto;          /* horizontal centering */
+  max-width: 100%;         /* ensure it doesn’t overflow */
+  height: auto;            /* maintain aspect ratio */
+}
+
+
+  
+  /* Layout */
+  .main-layout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 1rem;
+  }
+  
+
+  .about {
+    text-align: center;
+  }
+  /* Sidebar */
+ .sidebar {
+    background: #ffffff;
+    /*text-align: center;*/
+  }
+
+  
+  /* Content */
+  .content .window {
+    background: #eef6ff;
+  }
+  
+  /* Progress bar */
+  .progress-bar {
+    width: 100%;
+    height: 20px;
+    background: #fff;
+    border: 2px solid #000;
+    margin-top: 0.5rem;
+    gap: 10px;
+  }
+  
+  .progress {
+    height: 100%;
+    background: #38bdf8;
+    
+    display: flex;              /* enable flexbox */
+    align-items: center;        /* vertical center */
+    justify-content: center;    /* horizontal center */
+    font-weight: bold;         
+  }
+  /* Books */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.book {
+  background: #fff;
+  border: 2px solid #000;
+  width: 70px;
+  height: 97px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem; /* smaller text */
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.book img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+  .window2 {
+    border: 2px solid #000;
+    background: #eef6ff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 4px 4px 0 #000;
+    min-height: 500px; /* sets a minimum height */
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.8rem;
+}
